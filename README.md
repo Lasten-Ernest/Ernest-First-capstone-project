@@ -1,56 +1,42 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-> Description the project.
+# Project Name: YOUNG-CODERS-INITIATIVE (YCI) WEBSITE
+
+> Description the project:
+This project is a website for Young coders initiative. The website has all the information about the initiative and the contact details. 
 
 
 ## Built With
 
 - Major languages
+
+> Html
+> Css
+> JavaScript
 - Frameworks
-- Technologies used
-
-## Live Demo (if available)
-
-[Live Demo Link](https://livedemo.com)
+> Bootstrap
 
 
-## Getting Started
+## picturial preview
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+![YCI-homepage](https://user-images.githubusercontent.com/58563426/177007151-1a0e1afe-0e64-4ae0-92a6-b5b4d7b20f9d.png)
 
+## Live Demo
 
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
+[https://www.loom.com/share/8afcff6db58f4431bc43863d8c5bfaaa]
 
 
+## Author
 
-## Authors
+👤 **Ernest Lasten**
 
-👤 **Author1**
+- GitHub: [@Lasten-Ernest](https://github.com/Lasten-Ernest)
+- Twitter: [@ErnestLasten](https://twitter.com/ErnestLasten)
+- LinkedIn: [ernestlasten](https://mw.linkedin.com/in/ernest-lasten-613990197)
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 ## 🤝 Contributing
 
@@ -62,12 +48,7 @@ Feel free to check the [issues page](../../issues/).
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
-
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.
+
