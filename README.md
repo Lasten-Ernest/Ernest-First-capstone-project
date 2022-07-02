@@ -1,7 +1,5 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-![](https://img.shields.io/badge/Microverse-blueviolet)
-
 # Project Name: YOUNG-CODERS-INITIATIVE (YCI) WEBSITE
 
 > Description the project:
@@ -17,7 +15,6 @@ This project is a website for Young coders initiative. The website has all the i
 > JavaScript
 - Frameworks
 > Bootstrap
-
 
 ## picturial preview
 
