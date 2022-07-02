@@ -113,6 +113,7 @@ h1 {
   background-size: cover;
   padding: 16px; 
   -webkit-background-clip: text;
+  background-clip:calc();
   color: #ec5242;
   -webkit-text-fill-color: transparent;
 }

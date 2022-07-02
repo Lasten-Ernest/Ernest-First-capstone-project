@@ -45,10 +45,10 @@ const speakers = [
   },
   {
     class: 'alick-img',
-    name: 'Dr. Alick Elia',
+    name: 'Dr. Alicia Elia',
     personality: 'Chief of technicians at Business Machines, Malawi.',
     image: './img/melina.jpeg',
-    alt: 'alick',
+    alt: 'alicia',
     description: 'Mr. A. Elia is a computer engineer who is responsible for all computer operations at YCI',
   },
   {
