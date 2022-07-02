@@ -100,7 +100,7 @@ body {
   padding-left: 16px;
   margin-bottom: 12px;
   color: #f83b26;
-  font-size: 26px;
+  font-size: 80px;
   font-weight: 600;
 }
 
@@ -109,11 +109,7 @@ h1 {
   font-weight: bolder;
   font-size: 52px;
   line-height: 48px;
-  background-image: url(./img/red-background-17.png);
-  background-size: cover;
   padding: 16px; 
-  -webkit-background-clip: text;
-  background-clip:calc(100% - 30px);
   color: #ec5242;
   -webkit-text-fill-color: transparent;
 }
