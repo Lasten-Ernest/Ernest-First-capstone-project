@@ -114,7 +114,6 @@ h1 {
   padding: 16px; 
   -webkit-background-clip: text;
   background-clip:calc(100% - 30px);
-  /* background: conic-gradient(...); */
   color: #ec5242;
   -webkit-text-fill-color: transparent;
 }
