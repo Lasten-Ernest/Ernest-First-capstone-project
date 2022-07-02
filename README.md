@@ -21,6 +21,9 @@ This project is a website for Young coders initiative. The website has all the i
 ![YCI-homepage](https://user-images.githubusercontent.com/58563426/177007151-1a0e1afe-0e64-4ae0-92a6-b5b4d7b20f9d.png)
 
 ## Live Demo
+[https://lasten-ernest.github.io/Ernest-First-capstone-project/]
+
+## video demo
 
 [https://www.loom.com/share/8afcff6db58f4431bc43863d8c5bfaaa]
 
