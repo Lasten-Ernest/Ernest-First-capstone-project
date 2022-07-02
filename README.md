@@ -27,6 +27,11 @@ This project is a website for Young coders initiative. The website has all the i
 
 [https://www.loom.com/share/8afcff6db58f4431bc43863d8c5bfaaa]
 
+## To use this project
+- clone it using this link [https://github.com/Lasten-Ernest/Ernest-First-capstone-project.git]
+- open with your editor, preferrably VScode
+- open the index file and launch with live server 
+
 
 ## Author
 
