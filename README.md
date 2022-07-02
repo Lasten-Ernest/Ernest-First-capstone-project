@@ -42,6 +42,10 @@ This project is a website for Young coders initiative. The website has all the i
 - LinkedIn: [ernestlasten](https://mw.linkedin.com/in/ernest-lasten-613990197)
 
 
+## Acknowledgement
+- Many thanks to Cindy Shin [https://www.behance.net/gallery/29845175/CC-Global-Summit-2015] 
+whose website template was used to develop this website.
+
 
 ## 🤝 Contributing
 
