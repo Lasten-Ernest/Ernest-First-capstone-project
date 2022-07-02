@@ -16,9 +16,13 @@ This project is a website for Young coders initiative. The website has all the i
 - Frameworks
 > Bootstrap
 
+## picturial preview
+
+![YCI-homepage](https://user-images.githubusercontent.com/58563426/177007151-1a0e1afe-0e64-4ae0-92a6-b5b4d7b20f9d.png)
+
 ## Live Demo
 
-[Live Demo Link]
+[https://www.loom.com/share/8afcff6db58f4431bc43863d8c5bfaaa]
 
 
 ## Author
@@ -44,3 +48,4 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.
+
