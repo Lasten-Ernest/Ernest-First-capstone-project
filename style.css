@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Poppins:wght@800&display=swap');
 
-body {
-  font-family: 'Lato', sans-serif;
-}
-
 *,
 *::before,
 *::after {
@@ -12,49 +8,57 @@ body {
   box-sizing: border-box;
 }
 
-.navbar-one {
+#YCInavlogo {
   display: none;
+}
+
+#navbarmenu {
+  display: none;
+}
+
+.firstnav {
+  display: none;
+  padding: 9px;
   justify-content: flex-end;
   background-color: #1c1f23;
   gap: 20px;
-  padding: 10px;
 }
 
-.nav-item {
+.navbaritem {
   color: #fff;
   text-decoration: none;
   transition: 1s;
 }
 
-.nav-item:hover {
-  transform: scale(1.2);
-  color: #ec6e42;
+body {
+  font-family: 'Lato', sans-serif;
 }
 
-.navbar-two {
-  background-color: #eee;
+.navbaritem:hover {
+  transform: scale(1.5);
+  color: #f76c39;
 }
 
-.humburger {
+.secondnav {
+  background-color: rgb(249, 244, 244);
+}
+
+.humburgermenu {
+  padding: 10px;
   width: 90px;
   height: 70px;
-  padding: 10px;
 }
 
-.icon-bar {
+.iconbar {
+  color: #30353f;
   display: block;
-  margin: 6px auto;
-  height: 8px;
-  width: 50px;
-  color: #272a31;
-  background-color: #272a31;
+  margin: 9px auto;
+  height: 9px;
+  width: 52px;
+  background-color: #282e3b;
 }
 
-#header-logo {
-  display: none;
-}
-
-#myNavbar.active {
+#navbarmenu.active {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -62,11 +66,7 @@ body {
   gap: 20px;
 }
 
-#myNavbar {
-  display: none;
-}
-
-.link {
+.navbarlinks {
   padding: 5px;
   font-size: 20px;
   font-weight: 800;
@@ -75,55 +75,71 @@ body {
   color: #272a31;
 }
 
-.link:hover {
+.navbarlinks:hover {
   transform: scale(1.2);
-  color: #ec5242;
+  color: #153df1;
 }
 
-#campaign {
-  border: 2px solid #ec5242;
-  color: #ec5242;
-  padding: 10px;
+
+.YCI-h1:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
 }
 
-/*  MAIN SECTION  */
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
 
-.landing-page-section {
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+.ycilaunch {
+  color: #f0331e;
+  padding: 8px;
+  margin: 1px;
+  border: 1px solid #b44336;
+}
+
+.main-section {
   background: #eee;
   background-image: url('./img/landingPage.jpg');
   background-size: cover;
   background-blend-mode: multiply;
 }
 
-.greetings {
-  padding-top: 30px;
-  padding-left: 16px;
+.welcome-note {
   margin-bottom: 12px;
-  color: #f83b26;
-  font-size: 26px;
+  color: #f30808;
+  font-size: 32px;
   font-weight: 600;
+  padding-top: 28px;
+  padding-left: 24px;
 }
 
 h1 {
   font-family: 'Poppins', sans-serif;
   font-weight: bolder;
-  font-size: 52px;
-  line-height: 48px;
   background-image: url(./img/red-background-17.png);
   background-size: cover;
   padding: 16px; 
   -webkit-background-clip: text;
-  color: #ec5242;
+  color: #e44837;
   -webkit-text-fill-color: transparent;
-}
-
-.landing-page-para {
-  margin-top: 20px;
-  padding: 16px;
-  font-size: 20px;
-  line-height: 28px;
-  border: 3px solid #fff;
-  background-color: #e8e8e8;
+  font-size: 52px;
+  line-height: 48px;
 }
 
 h2 {
@@ -134,20 +150,36 @@ h2 {
   color: #393c42;
 }
 
-.location {
-  padding: 0 16px 114px 16px;
-  font-size: 22px;
-  color: #393c42;
+h3 {
+  color: rgb(231, 54, 14);
+  font-size: 25px;
+  font-weight: 700;
+  text-shadow: 1px 1px hsl(0deg 0% 13%);
 }
 
-.activities {
+.YCI-infor {
+  background-color: #faf9f9;
+  border: 1px solid #fff;
+  font-size: 19px;
+  line-height: 29px;
+  margin-top: 18px;
+  padding: 14px;
+}
+
+.period {
+  font-size: 22px;
+  color: #393c42;
+  padding: 20 15px 115px 15px;
+}
+
+.programs {
   background: #272a31;
   background-image: url(./img/main-section.jpg);
   background-size: cover;
   background-blend-mode: darken;
 }
 
-.activities-header {
+.programs-header {
   color: #fff;
   font-size: 26px;
   text-align: center;
@@ -155,13 +187,13 @@ h2 {
   padding-bottom: 20px;
 }
 
-.activities-header::before {
+.programs-header::before {
+  width: 73px;
+  left: 44%;
   content: '';
   position: absolute;
   border: 2px solid #f83b26;
-  width: 75px;
-  bottom: 0;
-  left: 43%;
+  
 }
 
 .row {
@@ -184,27 +216,20 @@ h2 {
   border: 3px solid #fff;
 }
 
-h3 {
-  color: hsl(11deg 89% 54%);
-  font-size: 24px;
-  font-weight: 700;
-  text-shadow: 1px 1px hsl(0deg 0% 13%);
-}
-
 .col-row p {
   color: #fff;
   font-size: 18px;
   text-align: center;
 }
 
-.join-summit {
+.bcomYCIstudent {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.join {
+.bcom-YCI-member {
   padding: 28px;
   font-size: 22px;
   color: #fff;
@@ -213,18 +238,18 @@ h3 {
   margin-bottom: 36px;
 }
 
-.see-program {
+.see-details {
   display: none;
 }
 
-.speakers-header {
+.speakers {
   text-align: center;
-  font-weight: 100;
+  font-weight: 105;
   position: relative;
   padding-bottom: 16px;
 }
 
-.speakers-header::before {
+.speakers::before {
   content: '';
   position: absolute;
   border: 2px solid #f83b26;
@@ -233,7 +258,7 @@ h3 {
   left: 43%;
 }
 
-.speakers-grid-container {
+.gridofspeakers {
   display: grid;
   grid-template-rows: repeat(4, 1fr);
   row-gap: 20px;
@@ -266,24 +291,24 @@ h3 {
   transform: scale(0.9);
 }
 
-.profile {
+.aboutspeaker {
   padding: 10px;
   line-height: 22px;
 }
 
-.name-of-speaker {
+.speakername {
   color: #272a31;
   text-shadow: none;
 }
 
-.persona {
+.personality {
   color: #f83b26;
-  padding-top: 5px;
   margin-bottom: 19px;
   font-size: 20px;
+  padding-top: 5px;
 }
 
-.brief-description {
+.description {
   font-size: 17px;
 }
 
@@ -291,19 +316,46 @@ footer {
   display: none;
 }
 
+#about-welcome-note {
+  text-align: center;
+}
+
+.aboutheader {
+  text-align: center;
+}
+
+
+.aboutheader:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  cursor: pointer;
+}
+  
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
 .about-container {
   background: #eee;
   background-image: url('./img/landingPage.jpg');
   background-size: cover;
   background-blend-mode: multiply;
-}
-
-#about-greetings {
-  text-align: center;
-}
-
-.about-h1 {
-  text-align: center;
 }
 
 .program-description {
@@ -319,11 +371,11 @@ footer {
   box-shadow: 2px 0 1px 2px lightgrey;
 }
 
-#email-link {
+#email-navbarlinks {
   border-bottom: 2px solid #4b5364;
 }
 
-.futher-info {
+.contacts {
   margin-bottom: 60px;
 }
 
@@ -433,7 +485,7 @@ footer {
   padding: 48px;
 }
 
-.footer-header {
+.footerhd {
   color: #fff;
   font-size: 36px;
   text-shadow: none;
@@ -441,12 +493,12 @@ footer {
   position: relative;
 }
 
-.footer-header::before {
+.footerhd::before {
+  width: 76px;
+  bottom: 0;
   content: '';
   position: absolute;
   border: 2px solid #f83b26;
-  width: 75px;
-  bottom: 0;
   left: 22%;
 }
 
@@ -454,22 +506,43 @@ footer {
   padding: 16px;
 }
 
-.footer-logo-and-copyright {
+.footeritems p {
+  padding-left: 12px;
+}
+
+.footeritems { 
+  background-color: rgb(99, 93, 93);
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 15px;
   padding: 16px;
-  background-color: #eee;
 }
 
-.ft-logo:hover {
-  transition: 1s;
-  transform: scale(1.2);
+.footerlogo:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  cursor: pointer;
 }
 
-.footer-logo-and-copyright p {
-  padding-left: 10px;
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
 }
 
 @media only screen and (max-width: 430px) {
@@ -486,47 +559,69 @@ footer {
   }
 }
 
-/*  DESKTOP VERSION  */
-
 @media (min-width: 768px) {
-  .navbar-one {
-    display: flex;
-  }
-
-  .navbar-two {
-    display: flex;
-    justify-content: space-between;
-    padding: 2px 75px;
-  }
-
-  .humburger {
+  .humburgermenu {
     display: none;
   }
 
-  #header-logo {
-    display: flex;
-    transition: 1s;
-    width: 80px;
-    height: 50px;
-  }
-
-  #header-logo:hover {
-    transform: scale(1.2);
-  }
-
-  #myNavbar {
+  #navbarmenu {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     gap: 15px;
   }
 
-  .landing-page-section {
+  .firstnav {
+    display: flex;
+  }
+
+  .secondnav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 75px;
+  }
+
+  #YCInavlogo {
+    display: flex;
+    width: 80px;
+    height: 50px;
+  }
+
+  #YCInavlogo:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+  
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+
+  #navbarmenu:active {
+      text-decoration: underline;
+  }
+
+  .main-section {
     padding-left: 120px;
     padding-right: 120px;
   }
 
-  .activities-header::before {
+  .programs-header::before {
     left: 47%;
   }
 
@@ -543,11 +638,11 @@ footer {
     text-align: center;
   }
 
-  .join {
+  .bcom-YCI-member {
     display: none;
   }
 
-  .see-program {
+  .see-details {
     display: flex;
     padding: 28px;
     font-size: 22px;
@@ -555,11 +650,11 @@ footer {
     margin-bottom: 36px;
   }
 
-  .speakers-header::before {
-    left: 46%;
+  .speakers::before {
+    left: 45%;
   }
 
-  .speakers-grid-container {
+  .gridofspeakers {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -576,16 +671,9 @@ footer {
     display: block;
   }
 
-  #footer-text {
-    transition-property: text;
-  }
-
-  #footer-text:hover {
-    transition-timing-function: ease-in-out;
-    transition-delay: 1s;
-    transition-duration: 0.3s;
-    font-size: 20px;
-    transform: scale(1.1);
+  .YCItext {
+    font-size: 22px;
+    color: #fff;
   }
 
   .program-description {

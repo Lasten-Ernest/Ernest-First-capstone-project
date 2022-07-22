@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,110 +7,103 @@
   <link href="style.css" rel="stylesheet" type="text/css">
   <title>Young Coders Website</title>
 </head>
-
 <body>
-
   <header class="container">
-    <nav class="nav navbar-one">
-      <a class="nav-item" href="#"><i class="fa fa-facebook fa_custom"></i></a>
-      <a class="nav-item" href="#"><i class="fa fa-twitter"></i></a>
-      <a class="nav-item" href="#">English</a>
-      <a class="nav-item" href="index.html">Homepage</a>
-      <a class="nav-item" href="#">Logout</a>
+    <nav class="navbar firstnav">
+      <a class="navbaritem" href="#">
+        <i class="fa fa-facebook fa_custom"></i>
+      </a>
+      <a class="navbaritem" href="#">
+        <i class="fa fa-twitter"></i>
+      </a>
+      <a class="navbaritem" href="#">English</a>
+      <a class="navbaritem" href="index.html">Homepage</a>
+      <a class="navbaritem" href="#">Logout</a>
     </nav>
-    <nav class="navbar-two">
-      <div class="navbar-header">
-        <div class="humburger">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
+    <nav class="secondnav">
+      <div class="YCInavlogo">
+        <div class="humburgermenu">
+          <span class="iconbar"></span>
+          <span class="iconbar"></span>
+          <span class="iconbar"></span>
         </div>
-        <a id="header-logo" href="index.html"><img src="./img/YCI-LOGO2.jpg" alt="Young coders initiative logo"></a>
+        <a id="YCInavlogo" href="index.html">
+          <img src="./img/YCI-LOGO2.jpg" alt="Young coders initiative logo">
+        </a>
       </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <a class="link" href="index.html">Home</a>
-        <a class="link" href="about.html">About</a>
-        <a class="link" href="#">Programs</a>
-        <a class="link" href="#">Join</a>
-        <a class="link" href="#">Sponsors</a>
-        <a class="link" href="#">News</a>
-        <a href="#" id="campaign" class="link">YCI LAUNCH</a>
+      <div class="collapse navbar-collapse" id="navbarmenu">
+        <a class="navbarlinks" href="index.html">Home</a>
+        <a class="navbarlinks" href="aboutPage.html">About</a>
+        <a class="navbarlinks" href="#">Programs</a>
+        <a class="navbarlinks" href="#">Join</a>
+        <a class="navbarlinks" href="#">Sponsors</a>
+        <a class="navbarlinks" href="#">News</a>
+        <a href="#"  class="ycilaunch navbarlinks">YCI LAUNCH</a>
       </div>
     </nav>
   </header>
-  <main class="main-container">
-    <section class="landing-page-section">
-      <p class="greetings">"Hello! Welcome to YCI"</p>
-      <h1 class="landing-page-header">YOUNG CODERS INITIATIVE<br>2022</h1>
-      <p class="landing-page-para">
+  <section class="main-container">
+    <section class="main-section">
+      <p class="welcome-note">"Hello! Welcome to Young Coders Initiative"</p>
+      <h1 class="YCI-h1">YOUNG CODERS INITIATIVE
+        <br>2022<br/>
+      </h1>
+      <p class="YCI-infor">
         Young Coders Initiative (YCI) was established to help seconandary school students learn 
         how to code and create Software programs from a tender age. Young Coders Initiative 
         aims at equipping secondary school students with skills and knowledge in the field of computer science. 
         YCI launches in December, 2022, in Malawi.
       </p>
-      <h2 class="duration">2022.12.12 (SAT) ~ 13(SUN)</h2>
-      <p class="location">@ Comesa Hall, Blantyre, Malawi</p>
+      <h2 class="period">2022.12.12 (SAT) ~ 13(SUN)</h2>
+      <p class="venue">@ Comesa Hall, Blantyre, Malawi</p>
     </section>
-
-    <section class="activities">
-      <h2 class="activities-header">Main Program</h2>
+    <section class="programs">
+      <h2 class="programs-header">Main Program</h2>
       <div class="row">
         <div class="col-row">
           <img class="presentation" src="./img/lecture.png" alt="Lecture">
-          <h3 class="lecture-heading">Founder's Speech</h3>
-          <p class="lecture-para">
-            The founder will describe the motive behind the initiative and
-            he will also share his vision and mission for YCI with the audience.
-        .</p>
+          <h3>Founder's Speech</h3>
+          <p>The founder will describe the motive behind the initiative and he will also share his vision and mission for YCI with the audience.</p>
         </div>
         <div class="col-row">
-          <img class="forum" src="./img/forum.png" alt="Forum">
-          <h3 class="forum-heading">Pioneer's Speech</h3>
-          <p class="forum-para">
-            The first students of YCI will share their thoughts about this initiative.
-            They will describe how the program has benefited them so far.
-          </p>
+          <img class="speech" src="./img/chat.png" alt="icon for chat">
+          <h3>Pioneer's Speech</h3>
+          <p>The first students of YCI will share their thoughts about this initiative. They will describe how the program has benefited them so far.</p>
         </div>
         <div class="col-row">
-          <img class="connect" src="./img/connect.png" alt="Connect">
-          <h3 class="ignite-heading">YCI Programs showcase</h3>
-          <p class="ignite-para">
-            This time will be for programs presentation. This time will be used to present 
-            the list of programs and services that will be offered by this initiative. 
+          <img src="./img/connect.png" alt="Connect">
+          <h3>YCI Programs showcase</h3>
+          <p>
+            This time will be for programs presentation. This time will be used to present the list of programs and services that will be offered by this initiative. 
           </p>
         </div>
       </div>
-      <div class="join-summit">
-        <button class="join" type="button">Join YCI</button>
-        <a href="#" class="see-program">SEE WHOLE PROGRAM</a>
+      <div class="bcomYCIstudent">
+        <button class="bcom-YCI-member" type="button">Join YCI</button>
+        <a href="#" class="see-details">SEE WHOLE PROGRAM</a>
       </div>
     </section>
     <section class="speakers-container">
-      <h2 class="speakers-header">SPEEKERS</h2>
-      <div class="speakers-grid-container">
-
+      <h2 class="speakers">SPEEKERS</h2>
+      <div class="gridofspeakers">
       </div>
     </section>
-
-  </main>
-
+  </section>
   <footer>
-    <div class="partner" id="mainpage-partner">
-      <h3 class="footer-header">Our Partners</h3>
-      <div class="partner-logos">
+    <div class="partner">
+      <h3 class="footerhd">Our Partners</h3>
+      <div>
         <img src="./img/usaid_logo.jpg" alt="USAID logo">
         <img src="./img/Logo-CNN.png" alt="CNN logo">
         <img src="./img/uba-logo.png" alt="UBA logo">
         <img src="./img/ukaid-(1).png" alt="UKAID logo">
       </div>
     </div>
-    <div class="footer-logo-and-copyright" id="mainpage-footer">
-      <img class="ft-logo" src="./img/YCI-LOGO2.jpg" alt="YCI Logo">
-      <p id="footer-text">&copy; 2022 Young Coders Initiative. <br/> All Right Reversed</p>
+    <div class="footeritems">
+      <img class="footerlogo" src="./img/YCI-LOGO2.jpg" alt="YCI Logo">
+      <p class="YCItext">&copy; 2022 Young Coders Initiative. <br/> All Right Reversed</p>
     </div>
   </footer>
-
-  <script src="index.js"></script>
+  <script src="App.js"></script>
 </body>
-
 </html>

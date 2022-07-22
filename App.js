@@ -1,13 +1,13 @@
-const toggleBtn = document.querySelector('.humburger');
-const links = document.querySelector('#myNavbar');
-const link = document.querySelectorAll('.link');
+const buttonToggle = document.querySelector('.humburgermenu');
+const navbarMenuLink = document.querySelector('#navbarmenu');
+const navbarLink = document.querySelectorAll('.navbarlinks');
 
-toggleBtn.addEventListener('click', () => {
-  links.classList.toggle('active');
+buttonToggle.addEventListener('click', () => {
+  navbarMenuLink.classList.toggle('active');
 });
 
-link.forEach((link) => link.addEventListener('click', () => {
-  links.classList.remove('active');
+navbarLink.forEach((navbarLink) => navbarLink.addEventListener('click', () => {
+  navbarMenuLink.classList.remove('active');
 }));
 
 const speakers = [
@@ -16,13 +16,13 @@ const speakers = [
     name: 'Dr. E. Lasten',
     personality: 'Chairman of Right-Minded Youth emporwerment club. He is the councellor for the youth at YCI',
     image: './img/lasten.jpg',
-    alt: 'inage for lasten',
+    alt: 'image for lasten',
     description: 'He has worked with the youth for 20 decade. He holds a doctrate degree in theology.',
   },
   {
     class: 'liwonde-img',
     name: 'Liwonde Chadza',
-    personality: 'District coordinator for education',
+    personality: 'District Coordinator for Education',
     image: './img/liwonde.jpg',
     alt: 'Mr. liwonde image',
     description: 'He is the network engineer and he is also responsible for the training the students at YCI',
@@ -30,7 +30,7 @@ const speakers = [
   {
     class: 'masuso-img',
     name: 'Mr. Luke Masuso',
-    personality: 'Mr. Luke masuso, sponsor representative',
+    personality: 'Mr. Luke masuso, Sponsor Representative',
     image: './img/masu.jpeg',
     alt: 'luke',
     description: 'He is the regional representative for USAID in Malawi. He foresees all the projects at YCI',
@@ -46,10 +46,10 @@ const speakers = [
   {
     class: 'alick-img',
     name: 'Dr. Alick Elia',
-    personality: 'Chief of technicians at Business Machines, Malawi.',
+    personality: 'Chief of Technicians at Business Machines, Malawi.',
     image: './img/melina.jpeg',
     alt: 'alick',
-    description: 'Mr. A. Elia is a computer engineer who is responsible for all computer operations at YCI',
+    description: 'Dr. A. Elia is a computer engineer who is responsible for all computer operations at YCI',
   },
   {
     class: 'limited-img',
@@ -61,7 +61,7 @@ const speakers = [
   },
 ];
 
-const speakersContainer = document.querySelector('.speakers-grid-container');
+const speakersContainer = document.querySelector('.gridofspeakers');
 
 function createSpeakers() {
   const len = speakers.length;
@@ -71,14 +71,15 @@ function createSpeakers() {
     speakersContainer.innerHTML += `
       <div class="speakers-card">
         <div class="col-1 col">
-          <div class="img-container">
+          <div class="image-container">
             <img class= ${speaker.class} src="${speaker.image}" alt=${speaker.alt}>
-            <div class="chess-bg"></div>
+              <div class="chess-bg">
+              </div>
           </div>
-          <div class="profile">
-            <h3 class="name-of-speaker">${speaker.name}</h3>
-            <p class="persona">${speaker.personality}</p>
-            <p class="brief-description">${speaker.description}</p>
+          <div class="aboutspeaker">
+            <h3 class="speakername">${speaker.name}</h3>
+            <p class="personality">${speaker.personality}</p>
+            <p class="description">${speaker.description}</p>
           </div>
         </div>
       </div>`;
